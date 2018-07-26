@@ -11,3 +11,12 @@
 .city-list {
   /* display: inline-flex; */
 }
+
+.glyphicon {
+  cursor: pointer;
+  color: red;
+}
+
+.comments-list {
+  padding: 5px;
+}

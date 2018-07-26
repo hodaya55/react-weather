@@ -4,7 +4,7 @@ import CommentBox from './CommentBox'
 export class CommentsListBox extends Component {
   render() {
     return (
-      <div>
+      <div className="comments-list">
         {this.props.comments.map((comment, i) =>
           <CommentBox
             commentText={comment}

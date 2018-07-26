@@ -16,8 +16,18 @@ export default class CommentForm extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <input placeholder="add comment..." onChange={this.handleChange} required value={this.state.commentText} />
-        <button className="btn btn-default" type="submit">Send</button>
+        <div className="input-group">
+          <input
+            className="form-control"
+            placeholder="add comment..."
+            onChange={this.handleChange}
+            required
+            value={this.state.commentText} />
+          <span className="input-group-btn">
+            <button
+              className="btn btn-danger " type="submit">Send</button>
+          </span>
+        </div>
       </form>
     )
   }
